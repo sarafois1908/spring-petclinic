@@ -13,7 +13,7 @@ pipeline {
   }
   stage('Build') {
     steps {
-      dir("/opt/jenkins/") {
+      dir("/opt/jenkins/spring-petclinic") {
         sh 'mvn -B -DskipTests clean package'
         }
       }
